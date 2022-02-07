@@ -9,6 +9,8 @@ input.onGesture(Gesture.Shake, function () {
             # # # # #
             # # # # #
             `)
+        music.playTone(262, music.beat(BeatFraction.Whole))
+        music.playTone(523, music.beat(BeatFraction.Whole))
     } else if (Jugada == 2) {
         basic.showLeds(`
             . # . # .
@@ -17,6 +19,8 @@ input.onGesture(Gesture.Shake, function () {
             # # . # #
             # # . # #
             `)
+        music.playTone(294, music.beat(BeatFraction.Half))
+        music.playTone(587, music.beat(BeatFraction.Half))
     } else {
         basic.showLeds(`
             . . . . .
@@ -25,5 +29,7 @@ input.onGesture(Gesture.Shake, function () {
             . # # # .
             . . . . .
             `)
+        music.playTone(330, music.beat(BeatFraction.Quarter))
+        music.playTone(659, music.beat(BeatFraction.Quarter))
     }
 })
